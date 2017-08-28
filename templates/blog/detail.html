@@ -22,32 +22,32 @@
         <hr>
         <h3>发表评论</h3>
 
-        <form action="{% url 'comments:post_comment' post.pk %}" method="post" class="comment-form">
-            {% csrf_token %}
-            <div class="row">
-              <div class="col-md-4">
-                <label for="{{ form.name.id_for_label }}">名字：</label>
-                {{ form.name }}
-                {{ form.name.errors }}
-              </div>
-              <div class="col-md-4">
-                <label for="{{ form.email.id_for_label }}">邮箱：</label>
-                {{ form.email }}
-                {{ form.email.errors }}
-              </div>
-              <div class="col-md-4">
-                <label for="{{ form.url.id_for_label }}">URL：</label>
-                {{ form.url }}
-                {{ form.url.errors }}
-              </div>
-              <div class="col-md-12">
-                <label for="{{ form.text.id_for_label }}">评论：</label>
-                {{ form.text }}
-                {{ form.text.errors }}
-                <button type="submit" class="comment-btn">发表</button>
-              </div>
-            </div>    <!-- row -->
-        </form>
+        <!--<form action="{% url 'comments:post_comment' post.pk %}" method="post" class="comment-form">-->
+            <!--{% csrf_token %}-->
+            <!--<div class="row">-->
+              <!--<div class="col-md-4">-->
+                <!--<label for="{{ form.name.id_for_label }}">名字：</label>-->
+                <!--{{ form.name }}-->
+                <!--{{ form.name.errors }}-->
+              <!--</div>-->
+              <!--<div class="col-md-4">-->
+                <!--<label for="{{ form.email.id_for_label }}">邮箱：</label>-->
+                <!--{{ form.email }}-->
+                <!--{{ form.email.errors }}-->
+              <!--</div>-->
+              <!--<div class="col-md-4">-->
+                <!--<label for="{{ form.url.id_for_label }}">URL：</label>-->
+                <!--{{ form.url }}-->
+                <!--{{ form.url.errors }}-->
+              <!--</div>-->
+              <!--<div class="col-md-12">-->
+                <!--<label for="{{ form.text.id_for_label }}">评论：</label>-->
+                <!--{{ form.text }}-->
+                <!--{{ form.text.errors }}-->
+                <!--<button type="submit" class="comment-btn">发表</button>-->
+              <!--</div>-->
+            <!--</div>    &lt;!&ndash; row &ndash;&gt;-->
+        <!--</form>-->
         <div class="comment-list-panel">
             <h3>评论列表，共 <span>4</span> 条评论</h3>
                 <ul class="comment-list list-unstyled">
